@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  /* ABC-MARIST */
+  @font-face {
+    font-family: "ABC-marist-book";
+    src: url("./fonts/ABCMarist-Book.woff2") format("woff2");
+  }
+  /* ABC-MARIST ITALIC */
+  @font-face {
+    font-family: "ABC-marist-book-italic";
+    src: url("./fonts/ABCMarist-BookItalic.woff2") format("woff2");
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --font-abc-marist: "ABC-marist-book", "serif";
+  --font-abc-marist-italic: "ABC-marist-book-italic", "serif";
 }
