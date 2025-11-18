@@ -15,7 +15,7 @@ export default function Loader({ onFinish }: LoaderProps) {
       
       // Animation props
       initial={{ opacity: 1 }} // Start fully visible
-      animate={{ opacity: 0 }} // Animate to fully transparent
+      animate={{ opacity: 0, display: "none" }} // Animate to fully transparent
       transition={{
         delay: 1.6,     // Wait 1.6 seconds before starting the fade
         duration: 1,  // Fade out over 1 second
