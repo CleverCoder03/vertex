@@ -4,6 +4,7 @@ import { useState } from "react";
 import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Accordion from "./components/Accordion";
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -16,6 +17,7 @@ export default function Home() {
         <div className="px-6 md:px-10 lg:px-15">
           <Navbar />
           <Hero />
+          <Accordion />
         </div>
       )}
     </>
