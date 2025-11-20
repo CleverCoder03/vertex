@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Approach = () => {
   return (
-    <>
+    <section id="approach">
       <div className="border-t-2 py-5 lg:py-8 font-abc-marist">
         <p className="uppercase text-lg">Our Apporoach</p>
         <p className="indent-15 leading-none mt-4 text-justify text-lg">
@@ -26,7 +26,7 @@ const Approach = () => {
           <Image src="/approach.avif" alt="Hero banner" fill />
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

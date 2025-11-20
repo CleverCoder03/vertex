@@ -7,6 +7,14 @@ body{
   box-sizing: border-box;
 }
 
+section{
+  scroll-margin-top: 4.3rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 @layer base {
   /* ABC-MARIST */
   @font-face {

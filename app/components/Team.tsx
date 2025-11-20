@@ -4,7 +4,8 @@ import Image from "next/image"
 
 const Team = () => {
   return (
-    <div className="border-y-2 pt-5 lg:pt-8 font-abc-marist">
+    <section id="team">
+        <div className="border-y-2 pt-5 lg:pt-8 font-abc-marist">
         <p className="uppercase text-lg">Team</p>
         <p className="indent-15 leading-none mt-4 text-justify text-lg">
           Our team combines specialist knowledge with broad expertise. Every team member is driven by curiosity and purpose. We’re always open to new ideas and partnerships. Let’s build the future together.
@@ -29,6 +30,7 @@ const Team = () => {
             }
         </div>
       </div>
+    </section>
   )
 }
 

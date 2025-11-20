@@ -9,6 +9,7 @@ import Headline from "./components/Headline";
 import Approach from "./components/Approach";
 import Commitment from "./components/Commitment";
 import Team from "./components/Team";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -28,7 +29,7 @@ export default function Home() {
           <Commitment />
           <Headline title="We are innovators, strategists and doers" />
           <Team />
-          <section className="h-dvh"></section>
+          <Footer />
         </div>
       )}
     </>

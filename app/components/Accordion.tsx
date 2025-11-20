@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { platforms } from "../constant";
-
+import Image from "next/image";
 
 const Accordion = () => {
   // State to keep track of the currently open accordion item's ID.
@@ -17,9 +17,9 @@ const Accordion = () => {
   };
 
   return (
-    <section className="mt-50">
+    <section className="mt-50" id="project">
       <div className="text-xl font-ppneune-medium">
-          <h1 className="mt-8 lg:mt-0 uppercase text-center font-abc-marist text-xl md:text-lg tracking-wide">
+        <h1 className="mt-8 lg:mt-0 uppercase text-center font-abc-marist text-xl md:text-lg tracking-wide">
           Platforms
         </h1>
       </div>
@@ -41,12 +41,14 @@ const Accordion = () => {
                 <div className="flex justify-between ">
                   <div className="flex">
                     <div className="">
-                      <h1 className="uppercase text-lg font-abc-marist">{item.title}</h1>
+                      <h1 className="uppercase text-lg font-abc-marist">
+                        {item.title}
+                      </h1>
                       <div className="overflow-hidden">
-                          <p className="pt-4 text-lg font-abc-marist leading-none">
-                            {item.desc}
-                          </p>
-                        </div>
+                        <p className="pt-4 text-lg font-abc-marist leading-none">
+                          {item.desc}
+                        </p>
+                      </div>
                       <div
                         id={`accordion-content-${item.id}`}
                         className={`grid transition-all duration-500 ease-in-out ${
@@ -56,9 +58,13 @@ const Accordion = () => {
                         }`}
                       >
                         <div className="overflow-hidden">
-                          <p className="pt-5 text-lg font-abc-marist leading-none">
-                            {item.desc}
-                          </p>
+                          <div className="pt-5 lg:pt-8">
+                            {item.images.map(src=>
+                              <div className="relative aspect-3/4" key={src.id}>
+                              <Image src={src.src} alt={src.src} fill />
+                            </div>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -84,4 +90,4 @@ const Accordion = () => {
   );
 };
 
-export default Accordion
+export default Accordion;

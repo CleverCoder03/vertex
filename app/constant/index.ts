@@ -27,23 +27,23 @@ export const platforms: Platform[] = [
     images: [
       {
         id: "1",
-        src: "",
+        src: "/compoter-1.avif",
       },
       {
         id: "2",
-        src: "",
+        src: "/compoter-2.avif",
       },
       {
         id: "3",
-        src: "",
+        src: "/compoter-3.avif",
       },
       {
         id: "4",
-        src: "",
+        src: "/compoter-4.avif",
       },
       {
         id: "5",
-        src: "",
+        src: "/compoter-5.avif",
       },
     ],
   },
@@ -54,23 +54,23 @@ export const platforms: Platform[] = [
     images: [
       {
         id: "1",
-        src: "",
+        src: "/general-1.avif",
       },
       {
         id: "2",
-        src: "",
+        src: "/general-2.avif",
       },
       {
         id: "3",
-        src: "",
+        src: "/general-3.avif",
       },
       {
         id: "4",
-        src: "",
+        src: "/general-4.avif",
       },
       {
         id: "5",
-        src: "",
+        src: "/general-5.avif",
       },
     ],
   },

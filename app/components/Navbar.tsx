@@ -98,6 +98,7 @@ const Navbar = () => {
                 <Link
                   key={link.id}
                   href={link.link}
+                  onClick={()=>setToggle(prev=>!prev)}
                   className={`${
                     pathName === link.link
                       ? "underline decoration-2 underline-offset-6 text-brand-black-og"
