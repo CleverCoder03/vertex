@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Carousel from "./Carousel";
+import { approach } from "../constant";
 
 const Approach = () => {
   return (
@@ -22,9 +24,7 @@ const Approach = () => {
         </p>
       </div>
       <div className="border-b-2 py-5 lg:py-8">
-        <div className="relative aspect-[4/2.8]">
-          <Image src="/approach.avif" alt="Hero banner" fill />
-        </div>
+        <Carousel images={approach} className={"aspect-[4/2.8]"} />
       </div>
     </section>
   );

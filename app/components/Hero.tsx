@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Carousel from "./Carousel";
+import { hero } from "../constant";
 
 const Hero = () => {
   return (
@@ -22,9 +24,7 @@ const Hero = () => {
 
       {/* Hero  Banner */}
       <div className="border-y-2 py-5 lg:py-8">
-        <div className="relative aspect-[4/2.5]">
-          <Image src="/hero.avif" alt="Hero banner" fill />
-        </div>
+        <Carousel images={hero} className={"aspect-[4/2.5]"} />
       </div>
 
       {/* Short Para */}

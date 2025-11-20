@@ -2,14 +2,12 @@
 
 import { useState } from "react";
 import { platforms } from "../constant";
-import Image from "next/image";
-import Menu from "./Carousel";
 import Carousel from "./Carousel";
 
 const Accordion = () => {
   // State to keep track of the currently open accordion item's ID.
   // We initialize it to null, so all items are closed by default.
-  const [openId, setOpenId] = useState<number | null>(null);
+  const [openId, setOpenId] = useState<number | null>(1);
 
   // This function handles the click event on an accordion item.
   const handleToggle = (id: number) => {

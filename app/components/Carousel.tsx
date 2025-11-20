@@ -37,15 +37,8 @@ const Carousel = ({ images, className = "" }: CarouselProps) => {
       // Animate the main image whenever currentIndex changes
       gsap.fromTo(
         ".main-image",
-        { opacity: 0, x: 50 },
-        { x: 0, opacity: 1, duration: 0.6, ease: "power2.out" }
-      );
-
-      // Animate the counter/text
-      gsap.fromTo(
-        ".slide-counter",
-        { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }
+        { opacity: 0 },
+        { opacity: 1, duration: 0.6, ease: "power2.out" }
       );
     },
     { dependencies: [currentIndex], scope: containerRef }
