@@ -18,13 +18,13 @@ const Accordion = () => {
 
   return (
     <section className="mt-50">
-      <div className="text-xl font-ppneune-medium lg:flex">
-          <h1 className="mt-8 lg:mt-0 uppercase text-center font-abc-marist text-xl md:text-lg tracking-wide lg:ml-[12vw]">
+      <div className="text-xl font-ppneune-medium">
+          <h1 className="mt-8 lg:mt-0 uppercase text-center font-abc-marist text-xl md:text-lg tracking-wide">
           Platforms
         </h1>
       </div>
 
-      <div className="border-t-2 border-black mt-4 text-xl font-ppneune-medium lg:ml-[14vw] lg:mt-30">
+      <div className="border-t-2 border-black mt-4 text-xl font-ppneune-medium lg:mt-30">
         {platforms.map((item) => {
           // Check if the current item is the one that's open
           const isOpen = item.id === openId;
@@ -32,7 +32,7 @@ const Accordion = () => {
           return (
             <div
               key={item.id}
-              className="py-8 lg:py-12 border-b-2 border-black cursor-pointer"
+              className="py-5 lg:py-8 border-b-2 border-black cursor-pointer"
               onClick={() => handleToggle(item.id)}
               aria-expanded={isOpen}
               aria-controls={`accordion-content-${item.id}`}
@@ -40,9 +40,13 @@ const Accordion = () => {
               <div>
                 <div className="flex justify-between ">
                   <div className="flex">
-                    <div className="hidden lg:block">{`0${item.id}`}</div>
                     <div className="">
                       <h1 className="uppercase text-xl font-abc-marist">{item.title}</h1>
+                      <div className="overflow-hidden">
+                          <p className="pt-4 text-lg font-abc-marist leading-none">
+                            {item.desc}
+                          </p>
+                        </div>
                       <div
                         id={`accordion-content-${item.id}`}
                         className={`grid transition-all duration-500 ease-in-out ${

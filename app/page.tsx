@@ -5,6 +5,8 @@ import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Accordion from "./components/Accordion";
+import Headline from "./components/Headline";
+import Approach from "./components/Approach";
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -18,6 +20,9 @@ export default function Home() {
           <Navbar />
           <Hero />
           <Accordion />
+          <Headline title={"Our platforms are driven by big ideas and executed with precision"} />
+          <Approach />
+          <section className="h-dvh"></section>
         </div>
       )}
     </>
