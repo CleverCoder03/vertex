@@ -91,7 +91,7 @@ const Navbar = () => {
             animate={{ y: 0 }}
             exit={{ y: "-100%" }} // <-- 2. Add the exit animation
             transition={{ ease: "easeInOut", duration: 0.5 }}
-            className="absolute z-100 top-0 left-0 h-dvh w-full bg-white flex justify-start items-end px-6 md:px-10 lg:px-15 pb-20"
+            className="fixed z-100 top-0 left-0 h-dvh w-full bg-white flex justify-start items-end px-6 md:px-10 lg:px-15 pb-20"
           >
             <div className="flex justify-center items-start flex-col gap-4 font-abc-marist font-medium text-4xl">
               {navLinks.map((link) => (
