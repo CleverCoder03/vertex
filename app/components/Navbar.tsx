@@ -49,13 +49,13 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="font-abc-marist uppercase flex justify-between items-center text-xl md:text-lg tracking-wide py-5 border-b-2 sticky top-0 z-9999 bg-white">
+      <div className="font-abc-marist uppercase flex justify-between items-center text-xl md:text-lg tracking-wide py-5 md:py-3 border-b-2 sticky top-0 z-9999 bg-white">
         <div className="flex justify-around md:w-full">
-          <Link className="hidden md:block" href="/">Project</Link>
-          <Link className="hidden md:block" href="/">Approach</Link>
+          <Link className="hidden md:block" href="#project">Project</Link>
+          <Link className="hidden md:block" href="#approach">Approach</Link>
           <Link href="/">Vertex</Link>
-          <Link className="hidden md:block" href="/">Commitment</Link>
-          <Link className="hidden md:block" href="/">Team</Link>
+          <Link className="hidden md:block" href="#commitment">Commitment</Link>
+          <Link className="hidden md:block" href="#team">Team</Link>
         </div>
 
         {/* MENU BAR */}

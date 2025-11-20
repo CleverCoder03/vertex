@@ -9,10 +9,11 @@ import { ImageItem } from "../constant";
 
 interface CarouselProps {
   images: ImageItem[];
-  className?: string
+  className?: string;
+  gallery?: boolean;
 }
 
-const Carousel = ({ images, className = "" }: CarouselProps) => {
+const Carousel = ({ images, className = "", gallery }: CarouselProps) => {
   // Type the ref as an HTMLDivElement
   const containerRef = useRef<HTMLDivElement>(null);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -47,7 +48,9 @@ const Carousel = ({ images, className = "" }: CarouselProps) => {
   return (
     <div ref={containerRef} className="w-full flex flex-col gap-6">
       {/* Main Content Area */}
-      <div className={`relative w-full flex flex-col md:flex-row gap-4 ${className} mt-5`}>
+      <div
+        className={`relative w-full flex flex-col md:flex-row gap-4 ${className} mt-5`}
+      >
         {/* Main Image */}
         <div className="relative w-full h-full overflow-hidden bg-gray-100">
           <Image
@@ -60,17 +63,24 @@ const Carousel = ({ images, className = "" }: CarouselProps) => {
           />
         </div>
 
-        <div className="absolute bottom-0 left-0 flex justify-center items-center w-full mb-5">
+        <div className="absolute bottom-0 left-0 flex justify-center items-center gap-2 w-full mb-5">
+          {gallery && (
+            <div className="py-2 px-6 rounded-sm bg-black/20 backdrop-blur text-white uppercase font-abc-marist tracking-wider hidden md:block">
+              Gallery
+            </div>
+          )}
           <div className="py-2 px-6 rounded-sm bg-black/20 backdrop-blur flex gap-5">
             {images.map((image, index) => (
-            <span
-              key={image.id}
-              onClick={() => goToSlide(index)}
-              className={`cursor-pointer font-abc-marist text-lg ${currentIndex === index ? "text-white" : "text-white/60"}`}
-            >
-              {index + 1}
-            </span>
-          ))}
+              <span
+                key={image.id}
+                onClick={() => goToSlide(index)}
+                className={`cursor-pointer font-abc-marist text-lg ${
+                  currentIndex === index ? "text-white" : "text-white/60"
+                }`}
+              >
+                {index + 1}
+              </span>
+            ))}
           </div>
         </div>
       </div>

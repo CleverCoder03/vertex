@@ -7,6 +7,8 @@ export interface Platform {
   id: number;
   title: string;
   desc: string;
+  type: string;
+  year: number;
   images: ImageItem[];
 }
 
@@ -22,42 +24,44 @@ export interface Team {
 export const hero: ImageItem[] = [
   {
     id: 1,
-    src: "/hero-1.avif"
+    src: "/hero-1.avif",
   },
   {
     id: 2,
-    src: "/hero-2.avif"
+    src: "/hero-2.avif",
   },
   {
     id: 3,
-    src: "/hero-3.avif"
+    src: "/hero-3.avif",
   },
-]
+];
 
 export const approach: ImageItem[] = [
   {
     id: 1,
-    src: "/approach-1.avif"
+    src: "/approach-1.avif",
   },
   {
     id: 2,
-    src: "/approach-2.avif"
+    src: "/approach-2.avif",
   },
   {
     id: 3,
-    src: "/approach-3.avif"
+    src: "/approach-3.avif",
   },
   {
     id: 4,
-    src: "/approach-4.avif"
+    src: "/approach-4.avif",
   },
-]
+];
 
 export const platforms: Platform[] = [
   {
     id: 1,
     title: "Comporter",
     desc: "A high-impact, sustainable portfolio of self-storage buildings built for businesses of tomorrow.",
+    type: "self-storage",
+    year: 2024,
     images: [
       {
         id: 1,
@@ -85,6 +89,8 @@ export const platforms: Platform[] = [
     id: 2,
     title: "General People",
     desc: "An award-winning, 500,000 sq. ft. serviced office platform that prioritises social impact.",
+    type: "workspace",
+    year: 2022,
     images: [
       {
         id: 1,

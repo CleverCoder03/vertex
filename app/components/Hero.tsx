@@ -24,13 +24,13 @@ const Hero = () => {
 
       {/* Hero  Banner */}
       <div className="border-y-2 py-5 lg:py-8">
-        <Carousel images={hero} className={"aspect-[4/2.5]"} />
+        <Carousel images={hero} className={"aspect-[4/2.5]"} gallery={true} />
       </div>
 
       {/* Short Para */}
-      <div className="font-abc-marist md:text-lg tracking-wide py-5 lg:py-8">
-        <p className="uppercase tracking-wide text-lg">Vertex</p>
-        <p className="indent-15 leading-none mt-4 text-justify text-lg">
+      <div className="font-abc-marist md:text-lg tracking-wide py-5 lg:py-8 md:flex ">
+        <p className="uppercase tracking-wide md:w-1/2 text-lg md:text-[2.5vw] xl:text-[2.2vw]">Vertex</p>
+        <p className="indent-15 leading-none mt-4 text-justify md:w-1/2 text-lg md:text-[2.5vw] xl:text-[2.2vw]">
           At Vertex Real Estate, we create and invest in spaces where life
           unfolds. We focus on transforming operational assets into robust
           platforms that bring together people, properties, and infrastructure.

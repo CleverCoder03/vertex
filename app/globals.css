@@ -7,6 +7,10 @@ body{
   box-sizing: border-box;
 }
 
+:root{
+  scroll-behavior: smooth;
+}
+
 section{
   scroll-margin-top: 4.3rem;
 }
@@ -34,7 +38,7 @@ section{
 }
 
 html.lenis-smooth {
-  scroll-behavior: auto !important;
+  scroll-behavior: smooth !important;
 }
 
 html.lenis {
