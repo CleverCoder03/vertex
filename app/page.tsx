@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import Accordion from "./components/Accordion";
 import Headline from "./components/Headline";
 import Approach from "./components/Approach";
+import Commitment from "./components/Commitment";
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -22,6 +23,8 @@ export default function Home() {
           <Accordion />
           <Headline title={"Our platforms are driven by big ideas and executed with precision"} />
           <Approach />
+          <Headline title={"At the heart of our mission is a commitment to social and sustainable impact"} />
+          <Commitment />
           <section className="h-dvh"></section>
         </div>
       )}

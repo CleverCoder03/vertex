@@ -41,7 +41,7 @@ const Accordion = () => {
                 <div className="flex justify-between ">
                   <div className="flex">
                     <div className="">
-                      <h1 className="uppercase text-xl font-abc-marist">{item.title}</h1>
+                      <h1 className="uppercase text-lg font-abc-marist">{item.title}</h1>
                       <div className="overflow-hidden">
                           <p className="pt-4 text-lg font-abc-marist leading-none">
                             {item.desc}
@@ -64,7 +64,7 @@ const Accordion = () => {
                     </div>
                   </div>
                   {/* Plus/Minus Icon */}
-                  <div className="relative w-5 h-5 flex-shrink-0">
+                  <div className="relative w-5 h-5 shrink-0">
                     {/* Horizontal line (always visible) */}
                     <div className="w-full border h-px bg-black absolute top-1/2 -translate-y-1/2"></div>
                     {/* Vertical line (rotates to become horizontal, forming a minus sign) */}

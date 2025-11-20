@@ -29,7 +29,7 @@ const Hero = () => {
 
       {/* Short Para */}
       <div className="font-abc-marist md:text-lg tracking-wide py-5 lg:py-8">
-        <p className="uppercase tracking-wide text-xl">Vertex</p>
+        <p className="uppercase tracking-wide text-lg">Vertex</p>
         <p className="indent-15 leading-none mt-4 text-justify text-lg">
           At Vertex Real Estate, we create and invest in spaces where life
           unfolds. We focus on transforming operational assets into robust
