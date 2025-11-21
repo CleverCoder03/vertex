@@ -6,7 +6,7 @@ const Approach = () => {
   return (
     <section id="approach">
       <div className="border-t-2 py-5 lg:py-8 font-abc-marist md:flex ">
-        <p className="uppercase md:w-1/2 text-lg md:text-[2.5vw] xl:text-[2.2vw]">Our Apporoach</p>
+        <p className="uppercase md:w-1/2 text-lg md:text-[2.5vw] xl:text-[2.2vw]">Our Approach</p>
         <div className="md:w-1/2 text-lg md:text-[2.5vw] xl:text-[2.2vw] flex flex-col md:gap-3">
           <p className="indent-15 leading-none mt-4 text-justify">
           We’re constantly shaping the future of real estate through innovative
